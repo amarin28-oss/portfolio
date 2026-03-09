@@ -16,14 +16,13 @@ font-family:Segoe UI, sans-serif;
 /* BACKGROUND */
 
 body{
-height:100vh;
-background:linear-gradient(135deg,#ff00cc,#3333ff,#00fff7,#ff8c00);
+background:linear-gradient(135deg,#ff7e5f,#ff9966,#ff5f6d,#ffc371);
 background-size:400% 400%;
-animation:gradientMove 15s ease infinite;
+animation:bgMove 18s ease infinite;
 color:white;
 }
 
-@keyframes gradientMove{
+@keyframes bgMove{
 0%{background-position:0% 50%;}
 50%{background-position:100% 50%;}
 100%{background-position:0% 50%;}
@@ -38,10 +37,10 @@ padding:120px 20px;
 
 .hero h1{
 font-size:70px;
-background:linear-gradient(90deg,#ffffff,#00fff7,#ff00ff);
+background:linear-gradient(90deg,#fff3b0,#ff8c42,#ff3c38);
 -webkit-background-clip:text;
 color:transparent;
-text-shadow:0 0 20px rgba(255,255,255,0.4);
+text-shadow:0 0 20px rgba(255,140,0,0.6);
 }
 
 .hero p{
@@ -50,13 +49,13 @@ font-size:22px;
 opacity:0.9;
 }
 
-/* NAV */
+/* NAVBAR */
 
 nav{
 display:flex;
 justify-content:center;
 gap:40px;
-background:rgba(0,0,0,0.3);
+background:rgba(0,0,0,0.35);
 backdrop-filter:blur(10px);
 padding:15px;
 border-bottom:1px solid rgba(255,255,255,0.2);
@@ -70,8 +69,8 @@ transition:0.3s;
 }
 
 nav a:hover{
-color:#00fff7;
-text-shadow:0 0 10px #00fff7;
+color:#ffd166;
+text-shadow:0 0 10px #ff7b00;
 }
 
 /* SECTIONS */
@@ -88,17 +87,69 @@ font-size:40px;
 margin-bottom:50px;
 }
 
-/* GLASS PANELS */
+/* PANELS */
 
 .panel{
-background:rgba(255,255,255,0.08);
-backdrop-filter:blur(12px);
+background:rgba(0,0,0,0.35);
+backdrop-filter:blur(10px);
 border-radius:20px;
 padding:40px;
 border:1px solid rgba(255,255,255,0.2);
-box-shadow:0 0 25px rgba(0,0,0,0.4);
 }
 
+/* PROJECT GRID */
+
+.projects{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:30px;
+}
+
+/* CARDS */
+
+.card{
+background:rgba(0,0,0,0.35);
+border-radius:18px;
+padding:25px;
+transition:0.35s;
+border:2px solid transparent;
+}
+
+.card:hover{
+transform:translateY(-10px) scale(1.04);
+border:2px solid #ff7b00;
+box-shadow:0 0 25px #ff7b00;
+}
+
+/* BUTTON */
+
+.card a{
+display:inline-block;
+margin-top:15px;
+padding:10px 20px;
+border-radius:10px;
+background:linear-gradient(90deg,#ff7b00,#ff3c38);
+color:white;
+font-weight:bold;
+text-decoration:none;
+transition:0.3s;
+}
+
+.card a:hover{
+transform:scale(1.1);
+box-shadow:0 0 15px #ff3c38;
+}
+
+/* FOOTER */
+
+footer{
+margin-top:60px;
+text-align:center;
+padding:30px;
+background:rgba(0,0,0,0.45);
+}
+
+</style>
 /* ABOUT */
 
 .about{
