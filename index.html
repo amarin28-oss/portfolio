@@ -6,7 +6,8 @@
 <title>Alejandro Marin | Portfolio</title>
 
 <style>
-/* Reset */
+
+/* RESET */
 * {
   margin: 0;
   padding: 0;
@@ -14,89 +15,80 @@
   font-family: 'Segoe UI', sans-serif;
 }
 
-/* BACKGROUND - CLEAN WARM */
+/* BODY */
 body {
-  background: linear-gradient(180deg, #ffe5b4, #ffad80);
-  color: #fff;
-  min-height: 100vh;
+  background: linear-gradient(135deg, #0f172a, #1e3a8a);
+  color: #e5e7eb;
 }
 
 /* HEADER */
 header {
   text-align: center;
-  padding: 120px 20px 80px 20px;
+  padding: 100px 20px 60px;
 }
 
 header h1 {
-  font-size: 70px;
-  background: linear-gradient(90deg, #ffdd7f, #ff7f50);
+  font-size: 60px;
+  font-weight: bold;
+  background: linear-gradient(90deg, #38bdf8, #22c55e, #facc15);
   -webkit-background-clip: text;
   color: transparent;
-  text-shadow: 0 0 25px rgba(255,140,0,0.7);
 }
 
 header p {
-  font-size: 22px;
   margin-top: 15px;
-  color: #442a0f;
-  opacity: 0.9;
+  font-size: 20px;
+  color: #cbd5f5;
 }
 
-/* NAVIGATION */
+/* NAV */
 nav {
   display: flex;
   justify-content: center;
   gap: 40px;
-  background: rgba(0,0,0,0.2);
-  backdrop-filter: blur(8px);
+  background: rgba(0,0,0,0.3);
   padding: 15px;
   position: sticky;
   top: 0;
-  z-index: 10;
-  border-bottom: 1px solid rgba(0,0,0,0.1);
+  backdrop-filter: blur(10px);
 }
 
 nav a {
+  color: #e5e7eb;
   text-decoration: none;
-  color: #fff;
   font-size: 18px;
   transition: 0.3s;
 }
 
 nav a:hover {
-  color: #ff8c42;
-  text-shadow: 0 0 10px #ff8c42;
+  color: #38bdf8;
 }
 
 /* SECTIONS */
 section {
   max-width: 1100px;
   margin: auto;
-  padding: 80px 20px;
+  padding: 70px 20px;
 }
 
 h2 {
   text-align: center;
-  font-size: 38px;
-  margin-bottom: 50px;
-  background: linear-gradient(90deg, #ffdd7f, #ff7f50);
-  -webkit-background-clip: text;
-  color: transparent;
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #facc15;
 }
 
 /* PANEL */
 .panel {
-  background: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(10px);
-  border-radius: 20px;
-  padding: 40px;
-  border: 1px solid rgba(255, 255, 255, 0.25);
-  color: #442a0f;
+  background: rgba(255,255,255,0.05);
+  padding: 30px;
+  border-radius: 15px;
+  border: 1px solid rgba(255,255,255,0.1);
+  text-align: center;
 }
 
-/* ABOUT TEXT */
+/* ABOUT */
 .about {
-  text-align: center;
   font-size: 18px;
   max-width: 700px;
   margin: auto;
@@ -105,34 +97,32 @@ h2 {
 /* PROJECT GRID */
 .projects {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 30px;
-  margin-top: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
 }
 
-/* PROJECT CARDS */
+/* CARD */
 .card {
-  background: rgba(255,255,255,0.1);
-  border-radius: 18px;
+  background: #111827;
   padding: 25px;
-  border: 2px solid transparent;
-  color: #442a0f;
-  transition: 0.35s;
+  border-radius: 15px;
+  transition: 0.3s;
+  border: 1px solid #1f2937;
 }
 
 .card:hover {
-  transform: translateY(-8px) scale(1.03);
-  border: 2px solid #ff8c42;
-  box-shadow: 0 0 25px #ff8c42;
+  transform: translateY(-8px);
+  border-color: #22c55e;
+  box-shadow: 0 0 20px rgba(34,197,94,0.4);
 }
 
 .card h3 {
-  font-size: 22px;
+  color: #38bdf8;
   margin-bottom: 10px;
 }
 
 .card p {
-  opacity: 0.9;
+  color: #cbd5f5;
 }
 
 /* BUTTON */
@@ -140,9 +130,9 @@ h2 {
   display: inline-block;
   margin-top: 15px;
   padding: 10px 20px;
-  border-radius: 10px;
-  background: linear-gradient(90deg, #ffb347, #ff7e5f);
-  color: #fff;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #22c55e, #facc15);
+  color: #000;
   font-weight: bold;
   text-decoration: none;
   transition: 0.3s;
@@ -150,23 +140,23 @@ h2 {
 
 .card a:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 15px #ff7e5f;
+  background: linear-gradient(90deg, #facc15, #fb923c);
 }
 
 /* CONTACT */
 .contact {
-  text-align: center;
   font-size: 18px;
 }
 
 /* FOOTER */
 footer {
-  margin-top: 60px;
   text-align: center;
   padding: 30px;
-  background: rgba(0,0,0,0.2);
-  color: #442a0f;
+  margin-top: 40px;
+  background: rgba(0,0,0,0.4);
+  color: #94a3b8;
 }
+
 </style>
 </head>
 
@@ -187,8 +177,8 @@ footer {
   <h2>About Me</h2>
   <div class="panel">
     <p class="about">
-      Hi! I'm a student currently taking a computer science class at school.
-      I enjoy building web projects and learning programming.
+      I'm a student at Belen enrolled in Honors Computer Science.
+      I enjoy engineering projects and learning to code, especially building interactive systems.
     </p>
   </div>
 </section>
@@ -196,21 +186,25 @@ footer {
 <section id="projects">
   <h2>My Projects</h2>
   <div class="projects">
+
     <div class="card">
       <h3>Restaurant Ordering System</h3>
       <p>A web-based ordering system built using HTML and JavaScript.</p>
       <a href="https://amarin28-oss.github.io/amarin28-order-system/" target="_blank">View Project</a>
     </div>
+
     <div class="card">
       <h3>Portfolio Website</h3>
       <p>This website you're currently viewing, built with HTML and CSS.</p>
       <a href="https://amarin28-oss.github.io/portfolio/" target="_blank">View Project</a>
     </div>
+
     <div class="card">
       <h3>Rock Paper Scissors</h3>
       <p>A simple Rock Paper Scissors game against a computer.</p>
       <a href="https://amarin28-oss.github.io/rock-paper-scissors/" target="_blank">View Project</a>
     </div>
+
   </div>
 </section>
 
